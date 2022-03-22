@@ -1,6 +1,7 @@
 package com.example;
 
 import java.util.Random;
+import java.util.function.IntBinaryOperator;
 
 public class Main {
 
@@ -26,7 +27,10 @@ public class Main {
       return x * y + randomNumber;
     };
 
-    System.out.println(calculator.calculate(1, 2));
+//    System.out.println(calculator.calculate(1, 2));
+
+    IntBinaryOperator operator=(int x,int y)->x+y;
+    System.out.println(operator.applyAsInt(2,3));
 
 
   }
